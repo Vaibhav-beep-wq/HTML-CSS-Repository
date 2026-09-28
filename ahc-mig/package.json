@@ -1,0 +1,11 @@
+{
+  "name": "mig-legal-aid-society",
+  "version": "1.0.0",
+  "description": "Allahabad High Court MIG Legal Aid Society — static site",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

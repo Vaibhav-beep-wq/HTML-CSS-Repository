@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Hindi pages — Devanagari font override.
+   Manrope / Playfair Display / Inter (the English typefaces) have no
+   Devanagari glyphs, so Hindi pages load this AFTER style.css to swap the
+   same --font-* variables for Devanagari-capable faces. Nothing else
+   changes — same colours, spacing, radii, components as the English site.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@600;700&display=swap');
+
+:root{
+  --font-serif:   'Noto Serif Devanagari', 'Playfair Display', Georgia, serif;
+  --font-display: 'Noto Sans Devanagari', 'Manrope', -apple-system, sans-serif;
+  --font-body:    'Noto Sans Devanagari', 'Inter', -apple-system, sans-serif;
+}
+
+/* Devanagari runs slightly taller than Latin — a touch more line-height
+   keeps matras from feeling cramped */
+body{ line-height: 1.75; }
+h1, h2, h3, h4{ line-height: 1.3; }
